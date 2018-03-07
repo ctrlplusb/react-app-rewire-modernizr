@@ -13,13 +13,17 @@ Adds [`modernizr-loader`](https://github.com/peerigon/modernizr-loader) to your 
 
 ## Installation
 
+_Note:_ `modernizr` is a peer dependency so you also need to install it.
+
 ```
-npm i react-app-rewire-modernizr -D
+npm install modernizr
+npm install react-app-rewire-modernizr -D
 ```
 
 _or_
 
 ```
+yarn add modernizr
 yarn add react-app-rewire-modernizr -D
 ```
 
@@ -37,3 +41,5 @@ config = modernizrPlugin(
   path.resolve(__dirname, "path/to/.modernizrrc")
 )
 ```
+
+See the [`modernizr-loader`](https://github.com/peerigon/modernizr-loader) docs for more information.
