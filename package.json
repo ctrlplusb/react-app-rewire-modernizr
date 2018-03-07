@@ -1,6 +1,6 @@
 {
   "name": "react-app-rewire-modernizr",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Adds modernizr-loader to your react-app-rewired config.",
   "license": "MIT",
   "main": "dist/react-app-rewire-modernizr.js",
