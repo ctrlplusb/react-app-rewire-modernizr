@@ -1,7 +1,7 @@
 {
   "name": "react-app-rewire-modernizr",
-  "version": "0.1.0",
-  "description": "Adds modernizr-webpack-plugin to your react-app-rewire config.",
+  "version": "0.2.0",
+  "description": "Adds modernizr-loader to your react-app-rewired config.",
   "license": "MIT",
   "main": "dist/react-app-rewire-modernizr.js",
   "files": [
@@ -17,7 +17,9 @@
   "homepage": "https://github.com/ctrlplusb/react-app-rewire-modernizr#readme",
   "author": "Sean Matheson <sean@ctrlplusb.com>",
   "keywords": [
-    "library"
+    "react",
+    "react-app-rewired",
+    "webpack"
   ],
   "scripts": {
     "build": "node ./tools/scripts/build.js",
@@ -31,7 +33,8 @@
     "test:coverage:deploy": "npm run test:coverage && codecov"
   },
   "dependencies": {
-    "modernizr-webpack-plugin": "^1.0.6"
+    "json-loader": "^0.5.7",
+    "modernizr-loader": "^1.0.1"
   },
   "devDependencies": {
     "app-root-dir": "^1.0.2",

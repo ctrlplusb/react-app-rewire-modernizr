@@ -1,10 +1,20 @@
-const ModernizrPlugin = require('modernizr-webpack-plugin')
+/* eslint-disable no-param-reassign */
 
-function rewireModernizrPlugin(config, env, modernizrPluginOptions = {}) {
-  // eslint-disable-next-line no-param-reassign
-  config.plugins = (config.plugins || []).concat([
-    new ModernizrPlugin(modernizrPluginOptions),
+function rewireModernizrPlugin(config, env, modernizrConfigPath) {
+  config.module = config.module || {}
+  config.module.rules = (config.module.rules || []).concat([
+    {
+      test: /\.modernizrrc.js$/,
+      use: ['modernizr-loader'],
+    },
+    {
+      test: /\.modernizrrc(\.json)?$/,
+      use: ['modernizr-loader', 'json-loader'],
+    },
   ])
+  config.resolve = config.resolve || {}
+  config.resolve.alias = config.resolve.alias || {}
+  config.resolve.alias.modernizr$ = modernizrConfigPath
   return config
 }
 

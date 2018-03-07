@@ -1,6 +1,6 @@
 # react-app-rewire-modernizr
 
-Adds modernizr-webpack-plugin to your react-app-rewire config.
+Adds [`modernizr-loader`](https://github.com/peerigon/modernizr-loader) to your [`react-app-rewired`](https://github.com/timarney/react-app-rewired) config.
 
 [![npm](https://img.shields.io/npm/v/react-app-rewire-modernizr.svg?style=flat-square)](http://npm.im/react-app-rewire-modernizr)
 [![MIT License](https://img.shields.io/npm/l/react-app-rewire-modernizr.svg?style=flat-square)](http://opensource.org/licenses/MIT)
