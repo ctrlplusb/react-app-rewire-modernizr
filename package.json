@@ -32,6 +32,9 @@
     "test:coverage": "npm run test -- --coverage",
     "test:coverage:deploy": "npm run test:coverage && codecov"
   },
+  "peerDependencies": {
+    "modernizr": "^3.6.0"
+  },
   "dependencies": {
     "json-loader": "^0.5.7",
     "modernizr-loader": "^1.0.1"
