@@ -8,10 +8,10 @@ Adds modernizr-webpack-plugin to your react-app-rewire config.
 
 ## TOCs
 
-  - [Introduction](#introduction)
-  - [FAQs](#faqs)
+  - [Installation](#installation)
+  - [Usage](#usage)
 
-## Install
+## Installation
 
 ```
 npm i react-app-rewire-modernizr -D
