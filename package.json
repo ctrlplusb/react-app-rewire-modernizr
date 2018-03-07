@@ -30,7 +30,7 @@
     "test:coverage": "npm run test -- --coverage",
     "test:coverage:deploy": "npm run test:coverage && codecov"
   },
-  "peerDependencies": {
+  "dependencies": {
     "modernizr-webpack-plugin": "^1.0.6"
   },
   "devDependencies": {
