@@ -31,11 +31,9 @@ Within your `react-app-rewire` config:
 const modernizrPlugin = require('react-app-rewire-modernizr')
 
 // Adds support for modernizr
-config = modernizrPlugin(config, env, {
-  'feature-detects': [
-    'input',
-    'canvas',
-    'css/resize'
-  ]
-})
+config = modernizrPlugin(
+  config,
+  env,
+  path.resolve(__dirname, "path/to/.modernizrrc")
+)
 ```
